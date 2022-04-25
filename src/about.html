@@ -6,12 +6,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Portfolio - Julie Ringås</title>
     <link rel="stylesheet" href="tailwind.css" />
-    <link
-      href="https://unpkg.com/tailwindcss@^1.6.0/dist/tailwind.min.css"
-      rel="stylesheet"
-    />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
       rel="stylesheet"
@@ -20,169 +17,189 @@
 
   <!-- Nav starts here -->
 
-  <body>
-    <header data-animation="fadeIn">
-      <h1>
-        <div
-          class="title"
-          data-animation="slideInDown"
-          data-animation-delay=".75s"
+  <body class="cursor-customcursor bg-gray-100">
+    <nav>
+      <header class="header visible mt-0 md:invisible">
+        <a href="index.html" class="logo">JR</a>
+        <input
+          class="menu-btn bg-transparent shadow-none"
+          type="checkbox"
+          id="menu-btn"
+        />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="mywork.html">My work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+
+    <!--desktop view-->
+
+    <nav
+      class="invisible fixed z-50 flex h-20 w-full justify-end border border-b-black md:visible"
+    >
+      <ul class="mr-10 mt-5">
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="mywork.html">My work</a>
+        </li>
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="about.html">About</a>
+        </li>
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Nav ends here -->
+
+    <!--Landing page body content start here -->
+
+    <!--mywork page body content ends here -->
+
+    <!--Section 1-->
+    <div
+      class="fade-in-bottom flex flex-col gap-8 p-20 pt-36 md:flex-row md:flex-wrap"
+    >
+      <div
+        class="aboutcontainer w-64 border border-x-transparent border-t-transparent border-b-transparent border-l-black border-r-transparent pl-10 md:ml-32 md:mt-24 md:mb-20"
+        data-aos="fade-up"
+      >
+        <h1
+          class="headingmywork z-50 mb-9 max-w-sm flex-wrap font-black leading-10"
         >
-          <b>Animate</b>
-        </div>
-        <div
-          class="subtitle"
-          data-animation="slideInUp"
-          data-animation-delay="1.5s"
-        >
-          On Scroll
-        </div>
-      </h1>
-    </header>
+          Julie Ringås
+        </h1>
 
-    <section>
-      <h1><b>Slide</b> Animation</h1>
-      <div class="box" data-animation="slideInRight"></div>
-      <div
-        class="box"
-        data-animation="slideInUp"
-        data-animation-delay=".3s"
-      ></div>
-      <div
-        class="box"
-        data-animation="slideInDown"
-        data-animation-delay=".6s"
-      ></div>
-      <div
-        class="box"
-        data-animation="slideInLeft"
-        data-animation-delay=".9s"
-      ></div>
-    </section>
-
-    <section>
-      <h1><b>Zoom</b> Animation</h1>
-      <div class="box" data-animation="zoomIn"></div>
-      <div
-        class="box"
-        data-animation="zoomIn"
-        data-animation-delay="300ms"
-      ></div>
-      <div
-        class="box"
-        data-animation="zoomIn"
-        data-animation-delay="600ms"
-      ></div>
-    </section>
-
-    <section>
-      <h1><b>Reverse Zoom</b> Animation</h1>
-      <div class="box" data-animation="zoomReverseIn"></div>
-      <div
-        class="box"
-        data-animation="zoomReverseIn"
-        data-animation-delay="300ms"
-      ></div>
-      <div
-        class="box"
-        data-animation="zoomReverseIn"
-        data-animation-delay="600ms"
-      ></div>
-    </section>
-
-    <section>
-      <h1><b>Fade</b> Animation</h1>
-      <div class="box" data-animation="fadeIn"></div>
-      <div
-        class="box"
-        data-animation="fadeIn"
-        data-animation-delay="300ms"
-      ></div>
-      <div
-        class="box"
-        data-animation="fadeIn"
-        data-animation-delay="600ms"
-      ></div>
-    </section>
-
-    <section>
-      <h1><b>Flip</b> Animation</h1>
-      <div class="box" data-animation="flipInY"></div>
-      <div
-        class="box"
-        data-animation="flipInY"
-        data-animation-delay="300ms"
-      ></div>
-      <div
-        class="box"
-        data-animation="flipInY"
-        data-animation-delay="600ms"
-      ></div>
-    </section>
-  </body>
-  <!--Landing page body content ends here -->
-
-  <!--Footer Starts here-->
-
-  <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
-    <div class="box1 flex justify-evenly bg-white md:border md:border-y-black">
-      <div class="line absolute md:invisible"></div>
-      <div class="w-56">
-        <h3 class="mt-7 text-2xl font-black">Julie Ringås</h3>
-        <p class="leading-6">
-          I'm a UX designer with a passion for creating meaningfull experiences
-          through design.
+        <p class="mb-10">
+          Hi! I’m Julie, a UX designer studying multimedia design at Copenhagen
+          School of Design and Technology. Welcome to my portfolio. I'm from
+          Norway and moved to Copenhagen two years ago. I love spending time
+          outside exploring everything the city has to offer. But I also love
+          spending time in front of my computer, doing geeky stuff.
         </p>
-      </div>
-    </div>
-    <div class="box2 bg-white md:border md:border-x-black md:border-t-black">
-      <div class="headingcontainer h-48">
-        <div class="eMailContainer grid h-16 grid-cols-4">
-          <h3
-            class="invisible ml-32 mt-7 w-40 text-2xl font-black md:visible md:ml-44"
-          >
-            Let's work together
-          </h3>
+        <section class="mb-10">
+          <h2 class="headingmywork text-lg font-bold">Work experience</h2>
+          <p class="text-sm">SEO Assistant @ GroupM</p>
+          <p class="mb-5 text-xs text-gray-400">12.10.2022 -</p>
+          <p class="text-sm">Customer advisor @ Fana Sparebank</p>
+          <p class="text-xs text-gray-400">01.04.2017 - 15.08.2020</p>
+        </section>
+        <section class="mb-10">
+          <h2 class="headingmywork text-lg font-bold">Education</h2>
+          <p class="text-sm">Multimediadesign @ KEA</p>
+          <p class="mb-5 text-xs text-gray-400">01.02.2021 -</p>
+          <p class="text-sm">
+            PR and market communication @ Handelshøyskolen BI
+          </p>
+          <p class="text-xs text-gray-400">15.08.2013 - 17.06.2016</p>
+        </section>
 
+        <section class="mb-10">
+          <h2 class="headingmywork text-lg font-bold">Skills and software</h2>
+          <ul class="ml-4 mt-2 list-disc text-sm">
+            <li class="mb-2">
+              <strong> Coding </strong> <br />
+              HTML, CSS, JS
+            </li>
+            <li class="mb-2">
+              <strong>Prototyping </strong> <br />
+              XD and Figma
+            </li>
+
+            <li class="mb-2">
+              <strong>Video editing</strong> <br />
+              Premiere Pro and After Effects
+            </li>
+            <li class="mb-2">
+              <strong> Writing </strong> <br />
+              SEO copywriting and UX copywriting
+            </li>
+          </ul>
+        </section>
+      </div>
+      <div class="-z-50 mt-9 ml-24 w-52 md:mt-20 md:ml-72 md:w-96">
+        <img src="../img/portrait.png" alt="beach" />
+      </div>
+
+      <!-- <h3 class="order-2 text-7xl md:ml-36" data-aos="fade-right">Hire me?</h3> -->
+    </div>
+    <!--Section 1-->
+
+    <!--Footer Starts here-->
+
+    <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
+      <div
+        class="box1 flex justify-evenly border border-t-black border-b-transparent bg-white md:border-y-black"
+      >
+        <div class="line absolute md:invisible"></div>
+        <div class="w-56">
+          <h3 class="mt-7 text-2xl font-black">Julie Ringås</h3>
+          <p class="leading-6">
+            I'm a UX designer with a passion for creating meaningfull
+            experiences through design.
+          </p>
+        </div>
+      </div>
+      <div class="box2 bg-white md:border md:border-x-black md:border-t-black">
+        <div class="headingcontainer h-48">
+          <div class="eMailContainer grid h-16 grid-cols-4">
+            <h3
+              class="invisible ml-32 mt-7 w-40 text-2xl font-black md:visible md:ml-44"
+            >
+              Let's work together
+            </h3>
+
+            <div
+              class="hover:delay-0 mt-24 h-12 cursor-pointer border border-black transition delay-150 duration-200 hover:text-indigo-600"
+            >
+              <a href="mailto:juli62j7@stud.kea.dk">E-MAIL ME</a>
+            </div>
+          </div>
+        </div>
+        <div
+          class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
+        >
           <div
-            class="hover:delay-0 mt-24 h-12 border border-black transition delay-150 duration-200 hover:text-indigo-600"
+            class="some1 hover:delay-0 bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
-            <a href="mailto:juli62j7@stud.kea.dk">E-MAIL ME</a>
+            <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
+              >LINKEDIN</a
+            >
+          </div>
+          <div
+            class="some2 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          >
+            <a
+              href="https://www.instagram.com/playground.graphic/"
+              target="_blank"
+              >INSTAGRAM</a
+            >
+          </div>
+          <div
+            class="some3 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          >
+            <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
+          </div>
+          <div
+            class="some4 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          >
+            <a href="tel:44163880">CALL ME</a>
           </div>
         </div>
       </div>
-      <div
-        class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
-      >
-        <div
-          class="some1 hover:delay-0 bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
-        >
-          <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
-            >LINKEDIN</a
-          >
-        </div>
-        <div
-          class="some2 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
-        >
-          <a
-            href="https://www.instagram.com/playground.graphic/"
-            target="_blank"
-            >INSTAGRAM</a
-          >
-        </div>
-        <div
-          class="some3 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
-        >
-          <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
-        </div>
-        <div
-          class="some4 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
-        >
-          <a href="tel:44163880">CALL ME</a>
-        </div>
-      </div>
-    </div>
-  </footer>
+    </footer>
 
-  <script type="module" src="index.js"></script>
+    <script type="module" src="index.js"></script>
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+    <script>
+      AOS.init({ offset: 50, duration: 700 });
+    </script>
+  </body>
 </html>

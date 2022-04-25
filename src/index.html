@@ -8,6 +8,7 @@
     <link rel="stylesheet" href="tailwind.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
     <link
       href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
       rel="stylesheet"
@@ -16,7 +17,7 @@
 
   <!-- Nav starts here -->
 
-  <body class="cursor-customcursor">
+  <body class="cursor-customcursor bg-gray-100">
     <nav>
       <header class="header visible mt-0 md:invisible">
         <a href="index.html" class="logo">JR</a>
@@ -39,19 +40,19 @@
     <!--desktop view-->
 
     <nav
-      class="invisible fixed z-50 flex h-20 w-full justify-end border border-b-black md:visible"
+      class="invisible fixed z-50 flex h-20 w-full justify-end  md:visible"
     >
       <ul class="mr-10 mt-5">
-        <li class="mr-3 block inline cursor-pointer">
+        <!-- <li class="mr-3 block inline cursor-pointer seeproject">
           <a href="index.html">Home</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
+        <li class="mr-3 block inline cursor-pointer seeproject">
           <a href="mywork.html">My work</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
+        <li class="mr-3 block inline cursor-pointer seeproject">
           <a href="about.html">About</a>
-        </li>
-        <li class="mr-3 block inline cursor-pointer">
+        </li> -->
+        <li class="mr-3 block inline cursor-pointer seeproject">
           <a href="contact.html">Contact</a>
         </li>
       </ul>
@@ -60,40 +61,31 @@
 
     <!--Landing page body content start here -->
 
-    <div class="bg-red-500 dark:bg-transparent herobackground min-h-[100vh] bg-no-repeat">
-      <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
-        <div
-          class="mb-5 w-11/12 flex-col items-center justify-center sm:mb-10 sm:w-2/3 lg:flex"
-        ></div>
-          <h2
-            class="fade-in-bottom fixed h-9 text-7xl font-black text-gray-900 max-w-5xl   md:text-9xl text-center "
-          >
-            UX/UI DESIGNER
-          </h2>
+    
+ 
+    
+    <div class="herobackground block min-h-[100vh] w-auto z-50 bg-cover bg-no-repeat "> 
+        
 
+   
+      <h1 class="md:ml-96  md:text-4xl font-black fixed mt-48   text-2xl ml-14 md:h-16   headingmywork fade-in-bottom z-50 ">JULIE RINGÅS</h1>
+      <h1 class="md:ml-80  md:text-9xl font-black fixed mt-56 text-7xl ml-16 md:h-16   h-9 md:pl-3 text-gray-900   fade-in-bottom  ">UX/UI DESIGNER</h2>
+      
+    
 
-          <p
-            class="mt-5 text-center text-sm font-normal text-gray-400 sm:mt-10 sm:text-lg lg:w-10/12"
-          >
-            A professonal website drives sales. Create a beautiful website to
-            impress and engage new customers and establish your business online
-          </p>
-        </div>
-        <div class="flex items-center justify-center">
-          <button
-            class="rounded border border-black bg-transparent px-4 py-2 text-sm text-white transition duration-150 ease-in-out hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold"
-          >
-            Get Started
-          </button>
-          <button
-            class="ml-4 rounded border border-indigo-700 bg-transparent px-4 py-2 text-sm text-indigo-700 transition duration-150 ease-in-out hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold"
-          >
-            Live Demo
-          </button>
-        </div>
-      </div>
+    <div class="grid grid-cols-2">
+      <button class="seeproject w-40 font-sans ">
+        <a href="mywork.html" class="fullprojectlink">My work</a>
+      </button>
+      <button class="seeproject  w-40 font-sans md:-ml-96 ">
+        <a href="about.html" class="fullprojectlink">About</a>
+      </button>
     </div>
-  </body>
+
+
+
+      
+    </body>
   <!--Landing page body content ends here -->
 
   <!--Footer Starts here-->
