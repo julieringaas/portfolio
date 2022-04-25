@@ -4,10 +4,160 @@
     <meta charset="UTF-8" />
     <meta http-equiv="X-UA-Compatible" content="IE=edge" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Tailwind Starter Template</title>
+    <title>Portfolio - Julie Ringås</title>
     <link rel="stylesheet" href="tailwind.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Lato:wght@100;400;700;900&display=swap"
+      rel="stylesheet"
+    />
   </head>
-  <body>
-    <script type="module" src="index.js"></script>
+
+  <!-- Nav starts here -->
+
+  <body class="cursor-customcursor">
+    <nav>
+      <header class="header visible mt-0 md:invisible">
+        <a href="index.html" class="logo">JR</a>
+        <input
+          class="menu-btn bg-transparent shadow-none"
+          type="checkbox"
+          id="menu-btn"
+        />
+        <label class="menu-icon" for="menu-btn"
+          ><span class="navicon"></span
+        ></label>
+        <ul class="menu">
+          <li><a href="mywork.html">My work</a></li>
+          <li><a href="about.html">About</a></li>
+          <li><a href="contact.html">Contact</a></li>
+        </ul>
+      </header>
+    </nav>
+
+    <!--desktop view-->
+
+    <nav
+      class="invisible fixed z-50 flex h-20 w-full justify-end border border-b-black md:visible"
+    >
+      <ul class="mr-10 mt-5">
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="index.html">Home</a>
+        </li>
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="mywork.html">My work</a>
+        </li>
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="about.html">About</a>
+        </li>
+        <li class="mr-3 block inline cursor-pointer">
+          <a href="contact.html">Contact</a>
+        </li>
+      </ul>
+    </nav>
+    <!-- Nav ends here -->
+
+    <!--Landing page body content start here -->
+
+    <div class="bg-red-500 dark:bg-transparent herobackground min-h-[100vh] bg-no-repeat">
+      <div class="container mx-auto flex flex-col items-center py-12 sm:py-24">
+        <div
+          class="mb-5 w-11/12 flex-col items-center justify-center sm:mb-10 sm:w-2/3 lg:flex"
+        ></div>
+          <h2
+            class="fade-in-bottom fixed h-9 text-7xl font-black text-gray-900 max-w-5xl   md:text-9xl text-center "
+          >
+            UX/UI DESIGNER
+          </h2>
+
+
+          <p
+            class="mt-5 text-center text-sm font-normal text-gray-400 sm:mt-10 sm:text-lg lg:w-10/12"
+          >
+            A professonal website drives sales. Create a beautiful website to
+            impress and engage new customers and establish your business online
+          </p>
+        </div>
+        <div class="flex items-center justify-center">
+          <button
+            class="rounded border border-black bg-transparent px-4 py-2 text-sm text-white transition duration-150 ease-in-out hover:bg-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold"
+          >
+            Get Started
+          </button>
+          <button
+            class="ml-4 rounded border border-indigo-700 bg-transparent px-4 py-2 text-sm text-indigo-700 transition duration-150 ease-in-out hover:border-indigo-600 hover:text-indigo-600 focus:outline-none focus:ring-2 focus:ring-indigo-700 focus:ring-offset-2 sm:px-10 sm:py-4 lg:text-xl lg:font-bold"
+          >
+            Live Demo
+          </button>
+        </div>
+      </div>
+    </div>
   </body>
+  <!--Landing page body content ends here -->
+
+  <!--Footer Starts here-->
+
+  <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
+    <div class="box1 flex justify-evenly bg-white md:border md:border-y-black">
+      <div class="line absolute md:invisible"></div>
+      <div class="w-56">
+        <h3 class="mt-7 text-2xl font-black">Julie Ringås</h3>
+        <p class="leading-6">
+          I'm a UX designer with a passion for creating meaningfull experiences
+          through design.
+        </p>
+      </div>
+    </div>
+    <div class="box2 bg-white md:border md:border-x-black md:border-t-black">
+      <div class="headingcontainer h-48">
+        <div class="eMailContainer grid h-16 grid-cols-4">
+          <h3
+            class="invisible ml-32 mt-7 w-40 text-2xl font-black md:visible md:ml-44"
+          >
+            Let's work together
+          </h3>
+
+          <div
+            class="hover:delay-0 mt-24 h-12 border border-black transition delay-150 duration-200 hover:text-indigo-600"
+          >
+            <a href="mailto:juli62j7@stud.kea.dk">E-MAIL ME</a>
+          </div>
+        </div>
+      </div>
+      <div
+        class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
+      >
+        <div
+          class="some1 hover:delay-0 bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+        >
+          <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
+            >LINKEDIN</a
+          >
+        </div>
+        <div
+          class="some2 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+        >
+          <a
+            href="https://www.instagram.com/playground.graphic/"
+            target="_blank"
+            >INSTAGRAM</a
+          >
+        </div>
+        <div
+          class="some3 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+        >
+          <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
+        </div>
+        <div
+          class="some4 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+        >
+          <a href="tel:44163880">CALL ME</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <script type="module" src="index.js"></script>
+
 </html>
