@@ -15,70 +15,76 @@
     />
   </head>
 
-  <!-- Nav starts here -->
+ <!-- Nav starts here -->
 
-  <body class="cursor-customcursor bg-white">
-    <nav>
-      <header class="header visible mt-0 md:invisible">
-        <a href="index.html" class="logo">JR</a>
-        <input
-          class="menu-btn bg-transparent shadow-none"
-          type="checkbox"
-          id="menu-btn"
-        />
-        <label class="menu-icon" for="menu-btn"
-          ><span class="navicon"></span
-        ></label>
-        <ul class="menu">
-          <li><a href="mywork.html">My work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
-        </ul>
-      </header>
-    </nav>
-
-    <!--desktop view-->
-
-    <nav
-      class="invisible fixed z-50 flex h-20 w-full justify-end  md:visible"
-    >
-      <ul class="mr-10 mt-5">
-        <!-- <li class="mr-3 block inline cursor-pointer seeproject">
-          <a href="index.html">Home</a>
-        </li>
-        <li class="mr-3 block inline cursor-pointer seeproject">
-          <a href="mywork.html">My work</a>
-        </li>
-        <li class="mr-3 block inline cursor-pointer seeproject">
-          <a href="about.html">About</a>
-        </li> -->
-        <li class="mr-3 block inline cursor-pointer seeproject">
-          <a href="contact.html">Contact</a>
-        </li>
+ <body class="bg-gray-100">
+  <nav>
+    <header class="header visible mt-0 bg-gray-100 md:invisible">
+      <a href="index.html" class="logo">JR</a>
+      <input
+        class="menu-btn bg-transparent shadow-none"
+        type="checkbox"
+        id="menu-btn"
+      />
+      <label class="menu-icon" for="menu-btn"
+        ><span class="navicon"></span
+      ></label>
+      <ul class="menu">
+        <li class="text-xs"><a href="mywork.html">MY WORK</a></li>
+        <li class="text-xs"><a href="about.html">ABOUT</a></li>
+        <li class="text-xs"><a href="contact.html">CONTACT</a></li>
       </ul>
-    </nav>
-    <!-- Nav ends here -->
+    </header>
+  </nav>
+
+  <!--desktop view-->
+
+  <nav class="invisible fixed z-50 flex h-16 w-full justify-end md:visible">
+    <ul class="mr-10 mt-5">
+      <li
+        class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+      >
+        <a href="index.html">HOME</a>
+      </li>
+      <li
+        class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+      >
+        <a href="mywork.html">MY WORK</a>
+      </li>
+      <li
+        class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+      >
+        <a href="about.html">ABOUT</a>
+      </li>
+      <li
+        class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+      >
+        <a href="contact.html">CONTACT</a>
+      </li>
+    </ul>
+  </nav>
+  <!-- Nav ends here -->
 
     <!--Landing page body content start here -->
 
     
  
     
-    <div class="herobackground block min-h-[100vh] w-auto z-50 bg-cover bg-no-repeat "> 
+    <div class="herobackground block min-h-[100vh] w-auto z-50 bg-cover bg-no-repeat  " > 
         
 
    
-      <h1 class="md:ml-96  md:text-4xl font-black fixed mt-48   text-2xl ml-14 md:h-16   headingmywork fade-in-bottom z-50 ">JULIE RINGÅS</h1>
+      <h1 class="md:ml-96  md:text-4xl font-black fixed mt-48   text-2xl ml-14 md:h-16  fade-in-bottom z-50 ">JULIE RINGÅS</h1>
       <h1 class="md:ml-80  md:text-9xl font-black fixed mt-56 text-7xl ml-16 md:h-16   h-9 md:pl-3 text-gray-900   fade-in-bottom  ">UX/UI DESIGNER</h2>
       
     
 
     <div class="grid grid-cols-2">
       <button class="seeproject w-40 font-sans ">
-        <a href="mywork.html" class="fullprojectlink">My work</a>
+        <a href="mywork.html" class="fullprojectlink z-0">My work</a>
       </button>
       <button class="seeproject  w-40 font-sans md:-ml-96 ">
-        <a href="about.html" class="fullprojectlink">About</a>
+        <a href="about.html" class="fullprojectlink z-0">About</a>
       </button>
     </div>
 
@@ -90,8 +96,8 @@
 
   <!--Footer Starts here-->
 
-  <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
-    <div class="box1 flex justify-evenly bg-white md:border md:border-y-black">
+  <footer class="z-50 mt-0 grid h-64 w-full md:grid-cols-2">
+    <div class="box1 flex justify-evenly bg-gray-100 md:border md:border-y-black">
       <div class="line absolute md:invisible"></div>
       <div class="w-56">
         <h3 class="mt-7 text-2xl font-black">Julie Ringås</h3>
@@ -101,7 +107,7 @@
         </p>
       </div>
     </div>
-    <div class="box2 bg-white md:border md:border-x-black md:border-t-black">
+    <div class="box2 bg-gray-100 md:border md:border-x-black md:border-t-black">
       <div class="headingcontainer h-48">
         <div class="eMailContainer grid h-16 grid-cols-4">
           <h3
@@ -121,14 +127,14 @@
         class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
       >
         <div
-          class="some1 hover:delay-0 bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some1 hover:delay-0 bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
         >
           <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
             >LINKEDIN</a
           >
         </div>
         <div
-          class="some2 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some2 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
         >
           <a
             href="https://www.instagram.com/playground.graphic/"
@@ -137,12 +143,12 @@
           >
         </div>
         <div
-          class="some3 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some3 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
         >
           <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
         </div>
         <div
-          class="some4 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some4 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
         >
           <a href="tel:44163880">CALL ME</a>
         </div>

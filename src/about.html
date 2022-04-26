@@ -17,9 +17,9 @@
 
   <!-- Nav starts here -->
 
-  <body class="cursor-customcursor bg-gray-100">
+  <body class="bg-gray-100">
     <nav>
-      <header class="header visible mt-0 md:invisible">
+      <header class="header visible mt-0 bg-gray-100 md:invisible">
         <a href="index.html" class="logo">JR</a>
         <input
           class="menu-btn bg-transparent shadow-none"
@@ -30,30 +30,36 @@
           ><span class="navicon"></span
         ></label>
         <ul class="menu">
-          <li><a href="mywork.html">My work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="text-xs"><a href="mywork.html">MY WORK</a></li>
+          <li class="text-xs"><a href="about.html">ABOUT</a></li>
+          <li class="text-xs"><a href="contact.html">CONTACT</a></li>
         </ul>
       </header>
     </nav>
 
     <!--desktop view-->
 
-    <nav
-      class="invisible fixed z-50 flex h-20 w-full justify-end border border-b-black md:visible"
-    >
+    <nav class="invisible fixed z-50 flex h-16 w-full justify-end md:visible">
       <ul class="mr-10 mt-5">
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="index.html">Home</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="index.html">HOME</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="mywork.html">My work</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="mywork.html">MY WORK</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="about.html">About</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="about.html">ABOUT</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="contact.html">Contact</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="contact.html">CONTACT</a>
         </li>
       </ul>
     </nav>
@@ -68,7 +74,7 @@
       class="fade-in-bottom flex flex-col gap-8 p-20 pt-36 md:flex-row md:flex-wrap"
     >
       <div
-        class="aboutcontainer w-64 border border-x-transparent border-t-transparent border-b-transparent border-l-black border-r-transparent pl-10 md:ml-32 md:mt-24 md:mb-20"
+        class="aboutcontainer w-64 pl-10 md:ml-32 md:mt-24 md:mb-20"
         data-aos="fade-up"
       >
         <h1
@@ -125,7 +131,11 @@
         </section>
       </div>
       <div class="-z-50 mt-9 ml-24 w-52 md:mt-20 md:ml-72 md:w-96">
-        <img src="../img/portrait.png" alt="beach" />
+        <img src="../img/portrait.png" alt="portrait" />
+        <img src="../img/5.png" alt="shape" data-aos="fade-right" />
+        <img src="../img/6.png" alt="shape" data-aos="fade-left" />
+        <img src="../img/7.png" alt="shape" data-aos="fade-right" />
+        <img src="../img/8.png" alt="shape" data-aos="fade-left" />
       </div>
 
       <!-- <h3 class="order-2 text-7xl md:ml-36" data-aos="fade-right">Hire me?</h3> -->
@@ -134,9 +144,9 @@
 
     <!--Footer Starts here-->
 
-    <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
+    <footer class="z-50 mt-0 grid h-64 w-full md:grid-cols-2">
       <div
-        class="box1 flex justify-evenly border border-t-black border-b-transparent bg-white md:border-y-black"
+        class="box1 flex justify-evenly bg-gray-100 md:border md:border-y-black"
       >
         <div class="line absolute md:invisible"></div>
         <div class="w-56">
@@ -147,7 +157,9 @@
           </p>
         </div>
       </div>
-      <div class="box2 bg-white md:border md:border-x-black md:border-t-black">
+      <div
+        class="box2 bg-gray-100 md:border md:border-x-black md:border-t-black"
+      >
         <div class="headingcontainer h-48">
           <div class="eMailContainer grid h-16 grid-cols-4">
             <h3
@@ -157,7 +169,7 @@
             </h3>
 
             <div
-              class="hover:delay-0 mt-24 h-12 cursor-pointer border border-black transition delay-150 duration-200 hover:text-indigo-600"
+              class="hover:delay-0 mt-24 h-12 border border-black transition delay-150 duration-200 hover:text-indigo-600"
             >
               <a href="mailto:juli62j7@stud.kea.dk">E-MAIL ME</a>
             </div>
@@ -167,14 +179,14 @@
           class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
         >
           <div
-            class="some1 hover:delay-0 bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some1 hover:delay-0 bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
               >LINKEDIN</a
             >
           </div>
           <div
-            class="some2 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some2 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a
               href="https://www.instagram.com/playground.graphic/"
@@ -183,12 +195,12 @@
             >
           </div>
           <div
-            class="some3 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some3 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
           </div>
           <div
-            class="some4 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some4 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a href="tel:44163880">CALL ME</a>
           </div>

@@ -17,9 +17,9 @@
 
   <!-- Nav starts here -->
 
-  <body class="cursor-customcursor bg-gray-100">
+  <body class="bg-gray-100">
     <nav>
-      <header class="header visible mt-0 md:invisible">
+      <header class="header visible mt-0 bg-gray-100 md:invisible">
         <a href="index.html" class="logo">JR</a>
         <input
           class="menu-btn bg-transparent shadow-none"
@@ -30,30 +30,36 @@
           ><span class="navicon"></span
         ></label>
         <ul class="menu">
-          <li><a href="mywork.html">My work</a></li>
-          <li><a href="about.html">About</a></li>
-          <li><a href="contact.html">Contact</a></li>
+          <li class="text-xs"><a href="mywork.html">MY WORK</a></li>
+          <li class="text-xs"><a href="about.html">ABOUT</a></li>
+          <li class="text-xs"><a href="contact.html">CONTACT</a></li>
         </ul>
       </header>
     </nav>
 
     <!--desktop view-->
 
-    <nav
-      class="invisible fixed z-50 flex h-20 w-full justify-end border border-b-black md:visible"
-    >
+    <nav class="invisible fixed z-50 flex h-16 w-full justify-end md:visible">
       <ul class="mr-10 mt-5">
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="index.html">Home</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="index.html">HOME</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="mywork.html">My work</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="mywork.html">MY WORK</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="about.html">About</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="about.html">ABOUT</a>
         </li>
-        <li class="mr-3 block inline cursor-pointer">
-          <a href="contact.html">Contact</a>
+        <li
+          class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
+        >
+          <a href="contact.html">CONTACT</a>
         </li>
       </ul>
     </nav>
@@ -75,14 +81,16 @@
         <ul class="">
           <li class="md:ml-32 md:mb-10">
             <a
-              href="#"
+              href="#GWC"
               class="ulmywork fade-in-bottom hover:fade-in-bottom seeproject cursor-pointer text-2xl font-normal"
               >Green Wardrobe Club</a
             >
           </li>
 
           <li class="md:ml-32 md:mb-10">
-            <a href="#" class="ulmywork fade-in-bottom seeproject text-2xl"
+            <a
+              href="#musikloftet"
+              class="ulmywork fade-in-bottom seeproject text-2xl"
               >Musikloftet</a
             >
           </li>
@@ -92,21 +100,32 @@
             >
           </li>
           <li class="mb-16 md:ml-32 md:mb-10">
-            <a href="#" class="ulmywork fade-in-bottom seeproject text-2xl"
+            <a
+              href="#skolemad"
+              class="ulmywork fade-in-bottom seeproject text-2xl"
               >SkoleMad</a
             >
           </li>
         </ul>
       </div>
-      <div class="md:-ml-20 md:mt-20">
-        <img src="../img/herobgblue.png" alt="beach" />
+      <div class="displat block md:-ml-20 md:mt-20">
+        <!-- <img src="../img/myworkbg.png" alt="geometric shapes" /> -->
+        <img
+          src="../img/1.png"
+          alt="geometric shapes"
+          data-aos="fade-left"
+          class=""
+        />
+        <img src="../img/2.png" alt="geometric shapes" data-aos="fade-right" />
+        <img src="../img/3.png" alt="geometric shapes" data-aos="fade-left" />
+        <img src="../img/4.png" alt="geometric shapes" data-aos="fade-rigt" />
       </div>
     </div>
     <!--Section 1-->
     <!--section 2-->
-    <section class="card">
+    <section class="card" id="GWC">
       <div class="flex flex-wrap md:flex-row-reverse md:flex-nowrap">
-        <div class="basis-1/2 p-32 md:p-40" data-aos="fade-left">
+        <div class="basis-1/2 p-32 md:scroll-pt-56" data-aos="fade-left">
           <h1
             class="headingmywork mb-9 max-w-sm flex-wrap font-black leading-10"
           >
@@ -130,7 +149,12 @@
             <li>HTML, CSS, JS</li>
           </ol>
           <button class="seeproject -ml-3">
-            <a href="index.html" class="fullprojectlink">Full project</a>
+            <a
+              href="https://julieringaas.github.io/gwc/index.html"
+              target="_blank"
+              class="fullprojectlink"
+              >Full project</a
+            >
           </button>
         </div>
         <div class="md:w-1/2 md:pt-40" data-aos="fade-up">
@@ -140,7 +164,7 @@
     </section>
     <!--Section 2 -->
     <!--section 3-->
-    <section class="card">
+    <section class="card" id="musikloftet">
       <div class="flex flex-col md:flex-row">
         <div class="p-32" data-aos="fade-right">
           <h1
@@ -166,7 +190,12 @@
             <li>HTML, CSS, JS</li>
           </ol>
           <button class="seeproject -ml-3">
-            <a href="index.html" class="fullprojectlink">Full project</a>
+            <a
+              href="http://triint.dk/musikloftet/index.html"
+              target="_blank"
+              class="fullprojectlink"
+              >Full project</a
+            >
           </button>
         </div>
         <div class="md:ml-32 md:w-1/2 md:pt-40" data-aos="fade-up">
@@ -178,7 +207,7 @@
     <!--Section 3 -->
 
     <!--section 4-->
-    <section class="card">
+    <section class="card" id="skolemad">
       <div
         class="flex flex-wrap md:flex-row-reverse md:flex-nowrap"
         data-aos="fade-left"
@@ -207,7 +236,12 @@
             <li>HTML, CSS, JS</li>
           </ol>
           <button class="seeproject -ml-3">
-            <a href="index.html" class="fullprojectlink">Full project</a>
+            <a
+              href="https://spectacular-figolla-5f1907.netlify.app/index.html"
+              target="_blank"
+              class="fullprojectlink"
+              >Full project</a
+            >
           </button>
         </div>
         <div class="md:w-1/2 md:pt-40">
@@ -244,9 +278,9 @@
             <li>After Effects</li>
             <li>HTML, CSS, JS</li>
           </ol>
-          <button class="seeproject -ml-3">
+          <!-- <button class="seeproject -ml-3">
             <a href="index.html" class="fullprojectlink">Full project</a>
-          </button>
+          </button> -->
         </div>
         <div class="md:ml-32 md:w-1/2 md:pt-40" data-aos="fade-up">
           <img src="../img/typography.png" alt="gwc" />
@@ -257,9 +291,9 @@
 
     <!--Footer Starts here-->
 
-    <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
+    <footer class="z-50 mt-0 grid h-64 w-full md:grid-cols-2">
       <div
-        class="box1 flex justify-evenly border border-t-black border-b-transparent bg-white md:border-y-black"
+        class="box1 flex justify-evenly bg-gray-100 md:border md:border-y-black"
       >
         <div class="line absolute md:invisible"></div>
         <div class="w-56">
@@ -270,7 +304,9 @@
           </p>
         </div>
       </div>
-      <div class="box2 bg-white md:border md:border-x-black md:border-t-black">
+      <div
+        class="box2 bg-gray-100 md:border md:border-x-black md:border-t-black"
+      >
         <div class="headingcontainer h-48">
           <div class="eMailContainer grid h-16 grid-cols-4">
             <h3
@@ -280,7 +316,7 @@
             </h3>
 
             <div
-              class="hover:delay-0 mt-24 h-12 cursor-pointer border border-black transition delay-150 duration-200 hover:text-indigo-600"
+              class="hover:delay-0 mt-24 h-12 border border-black transition delay-150 duration-200 hover:text-indigo-600"
             >
               <a href="mailto:juli62j7@stud.kea.dk">E-MAIL ME</a>
             </div>
@@ -290,14 +326,14 @@
           class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
         >
           <div
-            class="some1 hover:delay-0 bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some1 hover:delay-0 bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
               >LINKEDIN</a
             >
           </div>
           <div
-            class="some2 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some2 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a
               href="https://www.instagram.com/playground.graphic/"
@@ -306,12 +342,12 @@
             >
           </div>
           <div
-            class="some3 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some3 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
           </div>
           <div
-            class="some4 hover:delay-0 border border-l-black bg-white pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+            class="some4 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
           >
             <a href="tel:44163880">CALL ME</a>
           </div>
