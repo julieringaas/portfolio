@@ -97,7 +97,7 @@ a {
 .header .menu-icon .navicon {
   background: #333;
   display: block;
-  height: 2px;
+  height: 1px;
   position: relative;
   transition: background 0.2s ease-out;
   width: 18px;
@@ -148,6 +148,10 @@ a {
 .header .menu-btn:checked ~ .menu-icon:not(.steps) .navicon:after {
   top: 0;
 }
+
+/* .heading-landingpage {
+  font-family: "lato", sans-serif;
+} */
 
 /* 48em = 768px */
 
