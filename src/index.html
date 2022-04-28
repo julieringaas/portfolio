@@ -15,12 +15,17 @@
     />
   </head>
 
+
  <!-- Nav starts here -->
 
  <body class="bg-gray-100">
   <nav>
-    <header class="header visible mt-0 bg-gray-100 md:invisible">
-      <a href="index.html" class="logo text-xs hover:line-through pt-2">HOME</a>
+    <header
+      class="header visible mt-0 w-20 overflow-hidden bg-gray-100 md:invisible"
+    >
+      <a href="index.html" class="logo pt-2 text-xs hover:line-through"
+        >HOME</a
+      >
       <input
         class="menu-btn bg-transparent shadow-none"
         type="checkbox"
@@ -44,7 +49,9 @@
       <li
         class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
       >
-        <a href="index.html">HOME</a>
+        <a href="index.html" class="logo pt-2 text-xs hover:line-through"
+          >HOME</a
+        >
       </li>
       <li
         class="z-50 mr-3 block inline cursor-pointer text-xs hover:line-through"
@@ -64,6 +71,7 @@
     </ul>
   </nav>
   <!-- Nav ends here -->
+ 
 
     <!--Landing page body content start here -->
 
@@ -79,14 +87,14 @@
       
     
 
-    <div class="grid grid-cols-2">
-      <button class="seeproject w-40 font-sans ">
-        <a href="mywork.html" class="fullprojectlink z-0">My work</a>
-      </button>
-      <button class="seeproject  w-40 font-sans md:-ml-96 ">
-        <a href="about.html" class="fullprojectlink z-0">About</a>
-      </button>
-    </div>
+        <div class="grid md:grid-cols-2  gap-4 md:gap-44">
+          <button class="seeproject w-40 font-sans ">
+            <a href="mywork.html" class=" z-0">My work</a>
+          </button>
+          <button class="seeproject  w-40 font-sans md:-ml-96 ">
+            <a href="about.html" class=" z-0">About</a>
+          </button>
+        </div>
 
 
 
@@ -94,19 +102,22 @@
     </body>
   <!--Landing page body content ends here -->
 
-  <!--Footer Starts here-->
-
-  <footer class="z-50 mt-0 grid h-64 w-full md:grid-cols-2">
-    <div class="box1 flex justify-evenly bg-gray-100 md:border md:border-y-black">
+  <footer class="z-0 mt-0 grid h-64 w-full md:grid-cols-2">
+    <div
+      class="box1 flex justify-evenly border border-t-black border-b-transparent bg-gray-100 md:border md:border-y-black"
+    >
       <div class="line absolute md:invisible"></div>
       <div class="w-56">
         <h3 class="mt-7 text-2xl font-black">Julie Ringås</h3>
         <p class="leading-6">
-          I'm a UX/UI designer who thinks in code. My passion is to create meaningfull experiences through design.
+          I'm a UX/UI designer who thinks in code. My passion is to create
+          meaningfull experiences through design.
         </p>
       </div>
     </div>
-    <div class="box2 bg-gray-100 md:border md:border-x-black md:border-t-black">
+    <div
+      class="box2 bg-gray-100 md:border md:border-x-black md:border-t-black"
+    >
       <div class="headingcontainer h-48">
         <div class="eMailContainer grid h-16 grid-cols-4">
           <h3
@@ -116,7 +127,7 @@
           </h3>
 
           <div
-            class="hover:delay-0 mt-24 h-12 border border-black transition delay-150 duration-200 hover:text-indigo-600"
+            class="hover:delay-0 mt-24 h-12 border border-black pl-5 pt-3 text-xs transition delay-150 duration-200 hover:line-through"
           >
             <a href="mailto:juli62j7@stud.kea.dk">E-MAIL ME</a>
           </div>
@@ -126,14 +137,14 @@
         class="SocialMediaContainer grid h-16 grid-cols-4 border border-x-transparent border-y-black border-t-black"
       >
         <div
-          class="some1 hover:delay-0 bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some1 hover:delay-0 bg-gray-100 pt-4 text-center text-xs transition delay-150 duration-200 hover:line-through"
         >
           <a href="https://www.linkedin.com/in/julieringaas/" target="_blank"
             >LINKEDIN</a
           >
         </div>
         <div
-          class="some2 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some2 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center text-xs transition delay-150 duration-200 hover:line-through"
         >
           <a
             href="https://www.instagram.com/playground.graphic/"
@@ -142,12 +153,12 @@
           >
         </div>
         <div
-          class="some3 hover:delay-0 border border-l-black text-xs bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600 md:text-sm"
+          class="some3 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center text-xs transition delay-150 duration-200 hover:line-through"
         >
           <a href="https://github.com/julieringaas" target="_blank">GITHUB</a>
         </div>
         <div
-          class="some4 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center transition delay-150 duration-200 hover:text-blue-600"
+          class="some4 hover:delay-0 border border-l-black bg-gray-100 pt-4 text-center text-xs transition delay-150 duration-200 hover:line-through"
         >
           <a href="tel:44163880">CALL ME</a>
         </div>

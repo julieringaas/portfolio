@@ -24,6 +24,11 @@
   }
 }
 
+.about {
+  font-family: "Silk Serif", black;
+  font-size: 3rem;
+}
+
 /*herobackground*/
 .herobackground {
   background-image: url("../img/bggradient.webp");
@@ -33,7 +38,6 @@ body,
 html header {
   margin: 0;
   background-color: transparent;
-  overflow: hidden;
 }
 
 a {
@@ -45,7 +49,7 @@ a {
 .header {
   /* background-color: white; */
   position: fixed;
-  width: 600px;
+  width: 100%;
   z-index: 3;
 }
 
@@ -53,7 +57,6 @@ a {
   margin: 0;
   padding: 0;
   list-style: none;
-  overflow: hidden;
 }
 
 .header li a {
@@ -361,4 +364,34 @@ html {
     transform: translateY(0);
     opacity: 1;
   }
+}
+
+/*About me page*/
+
+.vl {
+  border-left: 1px solid black;
+  height: 40vh;
+  margin-left: 50vw;
+}
+.arrow {
+  height: 3vw;
+  width: 3vw;
+  border-style: solid;
+  border-color: black;
+  border-width: 0px 1px 1px 0px;
+  transform: rotate(45deg);
+  transition: border-width 150ms ease-in-out;
+  margin-top: -20vh;
+}
+
+.arrow:hover {
+  border-bottom-width: 2px;
+  border-right-width: 2px;
+}
+
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 10vh;
 }
