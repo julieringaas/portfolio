@@ -7,7 +7,7 @@
     font-family: "Lato", sans-serif;
   }
   h1 {
-    font-family: "Silk Serif", black;
+    font-family: "Playfair Display", serif;
     font-size: 5rem;
   }
 
@@ -15,7 +15,7 @@
     font-family: "Silk Serif", black;
   } */
   h3 {
-    font-family: "Silk Serif", black;
+    font-family: "Playfair Display", serif;
     font-size: 1.2rem;
   }
   p {
@@ -25,7 +25,7 @@
 }
 
 .about {
-  font-family: "Silk Serif", black;
+  font-family: "Playfair Display", serif;
   font-size: 3rem;
 }
 
@@ -185,7 +185,7 @@ a {
 }
 
 .fullprojectlink {
-  color: blue;
+  color: black;
 }
 
 .divider {
@@ -195,9 +195,9 @@ a {
   padding: 15px 40px;
   background: transparent;
   border: 0;
-  color: blue;
+  color: black;
   text-transform: uppercase;
-  border: blue;
+  border: black;
   border-style: solid;
   font-size: 12px;
   position: relative;
@@ -220,7 +220,7 @@ a {
 .seeproject::after {
   width: 30px;
   height: 1px;
-  background: blue;
+  background: black;
   transform: translateX(-3px);
   margin-top: 0px;
 }
@@ -231,8 +231,8 @@ a {
   width: 11px;
   height: 11px;
   background: transparent;
-  border-left: 1px solid blue;
-  border-bottom: 1px solid blue;
+  border-left: 1px solid black;
+  border-bottom: 1px solid black;
   margin-top: -1px;
 }
 
