@@ -11,9 +11,10 @@
     font-size: 5rem;
   }
 
-  /* h2 {
-    font-family: "Silk Serif", black;
-  } */
+  h2 {
+    font-family: "Playfair Display", serif;
+    font-size: 3rem;
+  }
   h3 {
     font-family: "Playfair Display", serif;
     font-size: 1.2rem;
@@ -177,7 +178,7 @@ a {
 } */
 
 .headingmywork {
-  color: blue;
+  color: black;
 }
 
 .ulmywork {
